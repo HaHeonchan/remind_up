@@ -1,14 +1,11 @@
 import { JsonStorageService } from '../storage/jsonStorage';
-import { ServerStorageService } from '../storage/serverStorage';
 import { User, CreateUserData, UpdateUserData } from '../types/user';
 
 export class UserService {
   private storage: JsonStorageService;
-  private serverStorage: ServerStorageService;
   
   constructor() {
     this.storage = new JsonStorageService();
-    this.serverStorage = ServerStorageService.getInstance();
   }
 
   public async createUser(data: CreateUserData): Promise<User> {
