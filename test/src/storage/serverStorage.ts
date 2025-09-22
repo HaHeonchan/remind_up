@@ -1,3 +1,4 @@
+import 'server-only';
 import { Reminder } from '../types/reminder';
 import { User } from '../types/user';
 import { ChatSession } from '../types/chat';
