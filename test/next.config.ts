@@ -15,6 +15,10 @@ const nextConfig: NextConfig = {
     ],
   },
   serverExternalPackages: ['nodemailer'],
+  experimental: {
+    serverComponentsExternalPackages: ['nodemailer'],
+  },
+  output: 'standalone',
 };
 
 export default nextConfig;
