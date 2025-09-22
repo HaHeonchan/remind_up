@@ -1,3 +1,4 @@
+import 'server-only';
 import { NotificationService } from '@/services/notificationService';
 
 class BackgroundTaskManager {

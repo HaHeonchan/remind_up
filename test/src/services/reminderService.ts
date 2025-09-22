@@ -1,14 +1,11 @@
 import { JsonStorageService } from '../storage/jsonStorage';
-import { ServerStorageService } from '../storage/serverStorage';
 import { Reminder, CreateReminderData, UpdateReminderData } from '../types/reminder';
 
 export class ReminderService {
   private storage: JsonStorageService;
-  private serverStorage: ServerStorageService;
   
   constructor() {
     this.storage = new JsonStorageService();
-    this.serverStorage = ServerStorageService.getInstance();
   }
 
   public async createReminder(data: CreateReminderData): Promise<Reminder> {
