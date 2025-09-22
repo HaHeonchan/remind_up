@@ -1,11 +1,11 @@
 'use client';
 
-import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
+import { Button } from '../components/ui/button';
+import { Card } from '../components/ui/card';
 import { MessageSquare, Calendar, User, Bot } from 'lucide-react';
 import Link from 'next/link';
-import { useUser } from '@/hooks/useUser';
-import { LoadingSpinner } from '@/components/LoadingSpinner';
+import { useUser } from '../hooks/useUser';
+import { LoadingSpinner } from '../components/LoadingSpinner';
 
 export default function Home() {
   const { user, loading } = useUser();

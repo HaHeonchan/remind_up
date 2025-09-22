@@ -1,14 +1,14 @@
 'use client';
 
-import { ReminderList } from '@/components/ReminderList';
-import { ReminderForm } from '@/components/ReminderForm';
-import { useUser } from '@/hooks/useUser';
-import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { ReminderList } from '../../components/ReminderList';
+import { ReminderForm } from '../../components/ReminderForm';
+import { useUser } from '../../hooks/useUser';
+import { Card } from '../../components/ui/card';
+import { Button } from '../../components/ui/button';
 import { useState } from 'react';
 import Link from 'next/link';
 import { Plus, Calendar, ArrowLeft } from 'lucide-react';
-import { LoadingSpinner } from '@/components/LoadingSpinner';
+import { LoadingSpinner } from '../../components/LoadingSpinner';
 
 export default function RemindersPage() {
   const { user, loading } = useUser();

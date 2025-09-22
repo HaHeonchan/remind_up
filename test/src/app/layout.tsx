@@ -2,11 +2,11 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import Providers from './providers';
-import { Navigation } from '@/components/Navigation';
+import { Navigation } from '../components/Navigation';
 
 // 서버 사이드 백그라운드 작업 초기화
 if (typeof window === 'undefined') {
-  import('@/lib/backgroundTasks');
+  import('../lib/backgroundTasks');
 }
 
 const geistSans = Geist({

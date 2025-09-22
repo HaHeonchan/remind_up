@@ -3,6 +3,8 @@
 AI 챗봇과 함께 일정을 예약하면 이메일로 일정을 알려주는 서비스입니다!
 
 Git URL : https://github.com/HaHeonchan/remind_up
+배포 주소: https://remind-up.onrender.com
+
 임시 배포 주소 : https://0718e8884645.ngrok-free.app
 
 ## 🚀 주요 기능
