@@ -1,12 +1,12 @@
 'use client';
 
-import { ChatBot } from '@/components/ChatBot';
-import { useUser } from '@/hooks/useUser';
-import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { ChatBot } from '../../components/ChatBot';
+import { useUser } from '../../hooks/useUser';
+import { Card } from '../../components/ui/card';
+import { Button } from '../../components/ui/button';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
-import { LoadingSpinner } from '@/components/LoadingSpinner';
+import { LoadingSpinner } from '../../components/LoadingSpinner';
 
 export default function ChatPage() {
   const { user, loading } = useUser();
