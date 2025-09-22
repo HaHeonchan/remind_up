@@ -60,8 +60,8 @@ class BackgroundTaskManager {
 }
 
 // 서버 시작 시 자동으로 백그라운드 작업 시작
-if (typeof window === 'undefined') {
-  // 서버 사이드에서만 실행
+if (typeof window === 'undefined' && process.env.NODE_ENV !== 'production') {
+  // 개발 환경에서만 백그라운드 작업 시작 (Render에서는 API 호출 방식 사용)
   const backgroundManager = BackgroundTaskManager.getInstance();
   backgroundManager.start();
 
