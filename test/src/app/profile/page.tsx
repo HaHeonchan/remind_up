@@ -1,11 +1,11 @@
 'use client';
 
-import { UserProfile } from '../../components/UserProfile';
-import { EmailSettings } from '../../components/EmailSettings';
-import { useUser } from '../../hooks/useUser';
-import { Card } from '../../components/ui/card';
+import { UserProfile } from '@/components/UserProfile';
+import { EmailSettings } from '@/components/EmailSettings';
+import { useUser } from '@/hooks/useUser';
+import { Card } from '@/components/ui/card';
 import { User, Mail, Settings, Server, Database } from 'lucide-react';
-import { LoadingSpinner } from '../../components/LoadingSpinner';
+import { LoadingSpinner } from '@/components/LoadingSpinner';
 import React, { useState } from 'react';
 
 export default function ProfilePage() {

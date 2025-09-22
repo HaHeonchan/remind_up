@@ -8,7 +8,7 @@ import {
   QueryClientProvider,
 } from '@tanstack/react-query';
 import { ThemeProvider } from 'next-themes';
-import { NotificationServiceProvider } from '../components/NotificationServiceProvider';
+import { NotificationServiceProvider } from '@/components/NotificationServiceProvider';
 
 function makeQueryClient() {
   return new QueryClient({
